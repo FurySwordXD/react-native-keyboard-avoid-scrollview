@@ -9,6 +9,14 @@ yarn add react-native-keyboard-avoid-scrollview
 ```
 npm install react-native-keyboard-avoid-scrollview
 ```
+
+### Android Configuration
+On Android, make sure your window soft input mode is "adjustResize" on your AndroidManifest.xml
+(This is default for React Native)
+```
+android:windowSoftInputMode="adjustResize"
+```
+
 - Start using KeyboardAvoidScrollView
 
 You have access to all ScrollView props and can be passed to the KeyboardAvoidScrollView.
@@ -30,38 +38,47 @@ function App()
 }
 ```
 
-### Examples
-![Alt text](./example1.gif?raw=true "Example1")
+## Example
+<img src="./example1.gif?raw=true"  height="300" alt="Example">
+
 ```
-    <View style={{ flex: 1, padding: 20  }}>
-        <KeyboardAvoidScrollView style={{ flex: 1 }}>
-            <View style={{ height: 500, justifyContent: 'center', alignItems: 'center', borderRadius: 20, backgroundColor: Colors.light }}>
-                <Text style={{ fontSize: 20 }}>This is some large content...</Text>
-            </View>
-            <View style={{ gap: 20, paddingVertical: 20 }}>
-                <Input label='First Name' placeholder='Enter first name...'/>
-                <Input label='Last Name' placeholder='Enter last name...'/>
-                <Button title='Submit' />
-            </View>
-        </KeyboardAvoidScrollView>
+<View style={{ flex: 1, padding: 20 }}>
+<KeyboardAvoidScrollView style={{ flex: 1 }}>
+    <View style={{
+        height: 500, justifyContent: 'center', alignItems: 'center',
+        borderRadius: 20, backgroundColor: Colors.light
+    }}>
+        <Text style={{ fontSize: 20 }}>This is some large content...</Text>
     </View>
+    <View style={{ gap: 20, paddingVertical: 20 }}>
+        <Input label='First Name' placeholder='Enter first name...'/>
+        <Input label='Last Name' placeholder='Enter last name...'/>
+        <Button title='Submit' />
+    </View>
+</KeyboardAvoidScrollView>
+</View>
 ```
 
+## Example with Spacing
 Now let's add some spacing so that the KeyboardAvoidScollView scrolls to the input with some additional offset.
-![Alt text](./example2.gif?raw=true "Example2")
+<img src="./example2.gif?raw=true"  height="300" alt="Example with spacing">
+
 ```
-    <View style={{ flex: 1, padding: 20  }}>
-        <KeyboardAvoidScrollView style={{ flex: 1 }} spacing={100}>
-            <View style={{ height: 500, justifyContent: 'center', alignItems: 'center', borderRadius: 20, backgroundColor: Colors.light }}>
-                <Text style={{ fontSize: 20 }}>This is some large content...</Text>
-            </View>
-            <View style={{ gap: 20, paddingVertical: 20 }}>
-                <Input label='First Name' placeholder='Enter first name...'/>
-                <Input label='Last Name' placeholder='Enter last name...'/>
-                <Button title='Submit' />
-            </View>
-        </KeyboardAvoidScrollView>
+<View style={{ flex: 1, padding: 20 }}>
+<KeyboardAvoidScrollView style={{ flex: 1 }} spacing={100}>
+    <View style={{
+        height: 500, justifyContent: 'center', alignItems: 'center',
+        borderRadius: 20, backgroundColor: Colors.light
+    }}>
+        <Text style={{ fontSize: 20 }}>This is some large content...</Text>
     </View>
+    <View style={{ gap: 20, paddingVertical: 20 }}>
+        <Input label='First Name' placeholder='Enter first name...'/>
+        <Input label='Last Name' placeholder='Enter last name...'/>
+        <Button title='Submit' />
+    </View>
+</KeyboardAvoidScrollView>
+</View>
 ```
 
 ### Authors
