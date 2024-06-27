@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "jsx": "react-jsx",
+        "rootDir": ".",
+        "skipLibCheck": true,
+        "strict": false,
+        "allowSyntheticDefaultImports": true,
+        "noEmit": true,
+        "noImplicitAny": true,
+    }
+}
