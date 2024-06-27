@@ -60,8 +60,7 @@ function App()
 ```
 
 ## Example with Spacing
-Now let's add some spacing so that the KeyboardAvoidScollView scrolls to the input with some additional offset.
-\n
+Now let's add some spacing so that the KeyboardAvoidScollView scrolls to the input with some additional offset.<br>
 <img src="./example2.gif?raw=true"  height="500" alt="Example with spacing">
 
 ```
