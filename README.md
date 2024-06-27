@@ -39,7 +39,7 @@ function App()
 ```
 
 ## Example
-<img src="./example1.gif?raw=true"  height="500" alt="Example">
+<img src="./example1.gif?raw=true" width="100%" height="500" alt="Example">
 
 ```
 <View style={{ flex: 1, padding: 20 }}>
@@ -61,7 +61,7 @@ function App()
 
 ## Example with Spacing
 Now let's add some spacing so that the KeyboardAvoidScollView scrolls to the input with some additional offset.<br>
-<img src="./example2.gif?raw=true"  height="500" alt="Example with spacing">
+<img src="./example2.gif?raw=true" width="100%" height="500" alt="Example with spacing">
 
 ```
 <View style={{ flex: 1, padding: 20 }}>
