@@ -1,11 +1,27 @@
 {
 	"name": "react-native-keyboard-avoid-scrollview",
-	"version": "1.0.0",
-	"keywords": ["react", "native", "react-native", "react-components", "android", "ios", "web", "ui", "components"],
+	"version": "1.0.1",
+	"keywords": [
+		"react",
+		"native",
+		"react-native",
+		"react-components",
+		"android",
+		"ios",
+		"web",
+		"ui",
+		"components"
+	],
 	"description": "A simple and easy to use cross platform component that works out of the box to handle all the jank involved in keyboard avoidance in React Native",
 	"license": "MIT",
-	"repository": { "type": "git", "url": "https://github.com/furyswordxd/react-native-keyboard-avoid-scrollview.git" },
-	"author": { "name": "Sainath Ganesh", "url": "https://github.com/furyswordxd" },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/furyswordxd/react-native-keyboard-avoid-scrollview.git"
+	},
+	"author": {
+		"name": "Sainath Ganesh",
+		"url": "https://github.com/furyswordxd"
+	},
 	"devDependencies": {
 		"@types/react": "^18.3.3",
 		"react": "^18.3.1",
